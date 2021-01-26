@@ -10,55 +10,67 @@
 <body>
 
   <header>
-    <h1>dev.finance$</h1>
+    <h1 id="logo">dev.finance$</h1>
   </header>
 
   <main>
-    <h2>Balanço</h2>
-    <h3>Entradas</h3>
-    <p>R$ 5.000,00</p>
+    <section id="balance">
+      <h2>Balanço</h2>
+      
+      <div class="card">
+        <h3>Entradas</h3>
+        <p>R$ 5.000,00</p>
+      </div>
 
-    <h3>Saídas</h3>
-    <p>R$ 2.000,00</p>
+      <div class="card">
+        <h3>Saídas</h3>
+        <p>R$ 2.000,00</p>
+      </div>
+      <div class="card">
+        <h3>Total</h3>
+        <p>R$ 3.000,00</p>
+      </div>
 
-    <h3>Total</h3>
-    <p>R$ 3.000,00</p>
+    </section>
 
-    <h2>Transações</h2>
+    <section id="transaction">
+      <h2>Transações</h2>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Descrição</th>
-          <th>Valor</th>
-          <th>Data</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Luz</td>
-          <td>- R$ 500,00</td>
-          <td>23/01/2021</td>
-        </tr>
+      <table id="date-table">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luz</td>
+            <td>- R$ 500,00</td>
+            <td>23/01/2021</td>
+          </tr>
 
-        <tr>
-          <td>Criação de website</td>
-          <td>R$ 5.000,00</td>
-          <td>23/01/2021</td>
-        </tr>
+          <tr>
+            <td>Criação de website</td>
+            <td>R$ 5.000,00</td>
+            <td>23/01/2021</td>
+          </tr>
 
-        <tr>
-          <td>Internet</td>
-          <td>- R$ 200,00</td>
-          <td>23/01/2021</td>
-        </tr>
-      </tbody>
-    </table>
+          <tr>
+            <td>Internet</td>
+            <td>- R$ 200,00</td>
+            <td>23/01/2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
   </main>
   <footer>
     <p>dev.finance$</p>
   </footer>
-  
+
 </body>
 
 </html>
