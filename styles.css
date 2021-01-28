@@ -1,4 +1,4 @@
-/* Global ========================*/
+/* Global ============================================ */
 :root {
   --dark-blue: #363f5f;
 }
@@ -28,7 +28,7 @@ body {
   width: min(90vw, 800px);
   margin: auto;
 }
-/* Titles ============*/
+/* Titles ========================================= */
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
@@ -36,7 +36,20 @@ h2 {
 
   font-weight: normal;
 }
-/* Header ============*/
+/* Links & Buttons =================================== */
+a {
+  color: #49aa26;
+  text-decoration: none;
+}
+a:hover {
+  color: #3dd705;
+}
+.button.new {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+/* Header ============================================ */
 header {
   background: #2d4a22;
   padding: 2rem 0 10rem;
@@ -47,7 +60,7 @@ header {
   color: #fff;
   font-weight: 100;
 }
-/* Balance ============*/
+/* Balance ============================================= */
 #balance {
   margin-top: -8rem;
 }
@@ -55,7 +68,7 @@ header {
   color: #fff;
   margin-top: 0;
 }
-/* Cards ============*/
+/* Cards =============================================== */
 .card {
   background: white;
   padding: 1.5rem 2rem;
@@ -80,14 +93,13 @@ header {
   background: #49aa26;
   color: white;
 }
-/* Table ============*/
+/* Table ========================================== */
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
   color: #969cb3;
 }
-table thead tr:first-chil
-table tbody tr:first-child {
+table thead tr:first-chil table tbody tr:first-child {
   border-radius: 0.25rem 0 0 0.25rem;
 }
 
@@ -120,11 +132,10 @@ td.expense {
   color: #e92929;
   width: min(90vw, 800px);
 }
-/* Footer ============*/
+/* Footer ============================================ */
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
   color: var(--dark-blue);
   opacity: 0.6;
-
 }
