@@ -8,10 +8,12 @@
   padding: 0%;
   box-sizing: border-box;
 }
+
 body {
   background: #f0f2f5;
   font-family: 'Poppins', sans-serif;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -28,22 +30,25 @@ body {
   width: min(90vw, 800px);
   margin: auto;
 }
+
 /* Titles ========================================= */
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
   color: var(--dark-blue);
-
   font-weight: normal;
 }
+
 /* Links & Buttons =================================== */
 a {
   color: #49aa26;
   text-decoration: none;
 }
+
 a:hover {
   color: #3dd705;
 }
+
 .button.new {
   display: inline-block;
   margin-bottom: 0.8rem;
@@ -60,14 +65,17 @@ header {
   color: #fff;
   font-weight: 100;
 }
+
 /* Balance ============================================= */
 #balance {
   margin-top: -8rem;
 }
+
 #balance h2 {
   color: #fff;
   margin-top: 0;
 }
+
 /* Cards =============================================== */
 .card {
   background: white;
@@ -75,6 +83,7 @@ header {
   border-radius: 0.25rem;
   margin-bottom: 2rem;
 }
+
 .card h3 {
   font-weight: normal;
   font-size: 1rem;
@@ -89,16 +98,19 @@ header {
   line-height: 3rem;
   margin-top: 1rem;
 }
+
 .card.total {
   background: #49aa26;
   color: white;
 }
+
 /* Table ========================================== */
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
   color: #969cb3;
 }
+
 table thead tr:first-chil table tbody tr:first-child {
   border-radius: 0.25rem 0 0 0.25rem;
 }
@@ -109,9 +121,11 @@ table thead th {
   padding: 1rem 2rem;
   text-align: left;
 }
+
 table tbody tr {
   opacity: 0.7;
 }
+
 table tbody tr:houer {
   opacity: 1;
 }
@@ -120,18 +134,22 @@ table tbody td {
   background: white;
   padding: 1rem 2rem;
 }
+
 td.description {
   color: var(--dark-blue);
   width: min(90vw, 800px);
 }
+
 td.income {
   color: #12a454;
   width: min(90vw, 800px);
 }
+
 td.expense {
   color: #e92929;
   width: min(90vw, 800px);
 }
+
 /* Footer ============================================ */
 footer {
   text-align: center;
