@@ -52,18 +52,25 @@ const Transaction = {
 //substituir os dados do HTML com os dados do JS
 //pegar transações do objeto transactions e colocar no HTML
 const DOM = {
-  innerHTMLTransaction() {
+  addTransaction(transaction, index) {
+    const tr = document.createElement('tr')
+    tr.innerHTML = DOM.innerHTMLTransaction(transaction)
 
-    const html = `
-    <tr>
-            <td class="description">Luz</td>
-            <td class="expense">- R$ 500,00</td>
-            <td class="day">23/01/2021</td>
+    console.log(tr.innerHTML) //executar linha
+  },
+  innerHTMLTransaction(transaction) {
+
+            const html = `
+            <td class="description">${transaction.description}</td>
+            <td class="expense">${transaction.amount}</td>
+            <td class="date">${transaction.date}</td>
             <td>
               <img src="./assets/minus.svg" alt="Remover transação">
             </td>
-      </tr>
-    `
+           `
 
+    return html 
   }
 }
+
+DOM.addTransaction(transactions[0])
