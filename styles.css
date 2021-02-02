@@ -275,8 +275,8 @@ input {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-purple);
-  opacity: 0.6;
+  color: #363f5f;
+  opacity: 0.4;
 }
 
 /* Responsive =========================================== */
