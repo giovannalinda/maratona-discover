@@ -87,7 +87,7 @@ const DOM = {
   addTransaction(transaction, index) {
     const tr = document.createElement('tr');
     tr.innerHTML = DOM.innerHTMLTransaction(transaction);
-
+    tr.dataset.index = index
     DOM.transactionsContainer.appendChild(tr);
     console.log(tr.innerHTML); //executar linha
   },
@@ -126,6 +126,17 @@ const DOM = {
 };
 
 const Utils = {
+  formatAmount(value) {
+    value = Number(value) * 100;
+
+    return value;
+  },
+
+  formatDate(date) {
+    const splittedDate = date.split('-');
+    return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}}`;
+  },
+
   formatCurrency(value) {
     const signal = Number(value) < 0 ? '-' : '';
 
@@ -142,17 +153,75 @@ const Utils = {
 };
 
 const Form = {
-  submit(event) {
-    event.preventDefault()
+  description: document.querySelector('input#description'),
+  amount: document.querySelector('input#amount'),
+  date: document.querySelector('input#date'),
 
-    // verificar se todas as informações foram preenchidas
-    // formatar os dados para salvar 
-    // salvar
-    // apagar os dados do formulario
-    // modal feche
-    // atualizar a aplicação
-  }
-}
+  getValues() {
+    return {
+      description: Form.description.value,
+      amount: Form.amount.value,
+      date: Form.date.value,
+    };
+  },
+
+  formatData() {
+    console.log();
+  },
+  validateFields() {
+    const { description, amount, date } = Form.getValues();
+    if (
+      description.trim() === '' ||
+      amount.trim() === '' ||
+      date.trim() === ''
+    ) {
+      throw new Error('Por favor, preencha todos os campos');
+    }
+  },
+
+  formatValues() {
+    let { description, amount, date } = Form.getValues();
+    amount = Utils.formatAmount(amount);
+
+    date = Utils.formatDate(date);
+
+    return {
+      description,
+      amount,
+      date,
+    };
+  },
+
+  saveTransaction(transaction) {
+    Transaction.add(transaction);
+  },
+
+  clearFields() {
+    Form.description.value = '';
+    Form.amount.value = '';
+    Form.date.value = '';
+  },
+
+  submit(event) {
+    event.preventDefault();
+
+    try {
+      // verificar se todas as informações foram preenchidas
+      Form.validateFields();
+      // formatar os dados para salvar
+      const transaction = Form.formatValues();
+      // salvar
+      Transaction.add(transaction);
+      // apagar os dados do formulario
+      Form.clearFields();
+      // modal feche
+      Modal.close();
+      // atualizar a aplicação
+    } catch (error) {
+      alert(error.message);
+    }
+  },
+};
 
 const App = {
   init() {
