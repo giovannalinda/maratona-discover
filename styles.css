@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: #f0f2f5;
+  background: #F8F8FF;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -97,7 +97,7 @@ opacity: 0.6;
 
 /* Header ============================================ */
 header {
-  background: var(--dark-purple);
+  background: var(--light-purple);
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -141,8 +141,8 @@ header {
 }
 
 .card.total {
-  background: #3dd705;
-  color: white;
+  background: #8A00FE;
+  color: #fff;
 }
 
 /* Table ========================================== */
@@ -167,7 +167,7 @@ table thead tr th:first-child {
 table tbody tr td:first-child {
   border-radius:0.25rem 0 0 0.25rem;
 
-  color: var(--light-purple);
+  color: #fff;
 }
 
 table thead tr th:last-child,
