@@ -280,7 +280,7 @@ footer {
 }
 
 /* Responsive =========================================== */
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   #balance {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -40,11 +40,11 @@ const Transaction = {
   },
 
   incomes() {
-    let income = 0;
-    Transaction.all.forEach((transaction) => {
-      if (transaction.amount > 0) {
-        income += transaction.amount;
-      }
+        let income = 0;
+        Transaction.all.forEach((transaction) => {
+        if (transaction.amount > 0) {
+            income += transaction.amount;
+         }
     });
     return income;
   },
@@ -81,12 +81,12 @@ const DOM = {
     const amount = Utils.formatCurrency(transaction.amount);
 
     const html = `
-      <td class="description">${transaction.description}</td>
-      <td class="${CSSclass}">${amount}</td>
-      <td class="date">${transaction.date}</td>
-      <td>
-          <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação">
-      </td>
+        <td class="description">${transaction.description}</td>
+        <td class="${CSSclass}">${amount}</td>
+        <td class="date">${transaction.date}</td>
+        <td>
+            <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação">
+        </td>
       `;
 
     return html;
@@ -153,12 +153,10 @@ const Form = {
   validateFields() {
     const { description, amount, date } = Form.getValues();
 
-    if (
-      description.trim() === '' ||
-      amount.trim() === '' ||
-      date.trim() === ''
-    ) {
-      throw new Error('Por favor, preencha todos os campos');
+    if ( description.trim() === "" ||
+      amount.trim() === "" ||
+      date.trim() === "" ) {
+              throw new Error('Por favor, preencha todos os campos');
     }
   },
 
