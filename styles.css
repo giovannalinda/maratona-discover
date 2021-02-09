@@ -19,8 +19,30 @@ html {
 }
 
 body {
-  background: #F8F8FF;
+  --color-text: #000;
+  --background-color: #333333;
+  --background-color2: #A9A9A9; 
+  background: var(--background-color);
+  color: var(--color-text);
   font-family: 'Poppins', sans-serif;
+}
+
+#darkmodeToggle:checked + .container {
+  --color-text: #000;
+  --background-color: #F8F8FF;
+  --background-color2: #fff;
+
+  background: var(--background-color);
+  color: var(--color-text);
+}
+
+.darkmodeLabel {
+  cursor: pointer;
+  
+}
+
+.darkmodeLabel:after {
+  content: ' off';
 }
 
 .sr-only {
@@ -182,11 +204,11 @@ table thead th {
 }
 
 table tbody tr {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 table tbody tr:houer {
-  opacity: 1;
+  opacity: 4;
 }
 
 table tbody td {
@@ -275,8 +297,8 @@ input {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: #363f5f;
-  opacity: 0.4;
+  color: var(--light-purple);
+  opacity: 0.8;
 }
 
 /* Responsive =========================================== */
