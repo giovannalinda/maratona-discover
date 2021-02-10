@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  background-color: #fff;
   background: #f8f8f8;
   font-family: 'Poppins', sans-serif;
 }
@@ -276,7 +277,7 @@ footer {
   text-align: center;
   padding: 4rem 0 2rem;
   color: var(--light-purple);
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 /* Responsive =========================================== */
