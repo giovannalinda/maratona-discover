@@ -19,8 +19,7 @@ html {
 }
 
 body {
-  background-color: #fff;
-  background: #f8f8f8;
+  background: #F8F8FF;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -59,7 +58,7 @@ a:hover {
   color: var(--light-green);
 }
 
-button {
+.save-button {
   width: 100%;
   height: 50px;
   border: none;
@@ -70,7 +69,7 @@ button {
   cursor: pointer;
 }
 
-button:houver {
+.save-button:houver {
   background: var(--light-green);
 }
 
@@ -100,7 +99,21 @@ opacity: 0.6;
 header {
   background: var(--light-purple);
   padding: 2rem 0 10rem;
-  text-align: center;
+  
+  display: grid;
+  place-items: center;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 100%;
+  max-width: 800px;
+}
+
+.header-logo {
+  margin: 0 auto;
 }
 
 #logo {
@@ -168,7 +181,7 @@ table thead tr th:first-child {
 table tbody tr td:first-child {
   border-radius:0.25rem 0 0 0.25rem;
 
-  color: black;
+  color: #000;
 }
 
 table thead tr th:last-child,
@@ -183,11 +196,11 @@ table thead th {
 }
 
 table tbody tr {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 table tbody tr:houer {
-  opacity: 4;
+  opacity: 1;
 }
 
 table tbody td {
@@ -272,12 +285,60 @@ input {
   width: 48%;
 }
 
+.input-checkbox {
+  margin-left: auto;
+}
+
+/** Toggle Switch */
+input[type="checkbox"]{
+  display:none;
+}
+
+label.switch-checkbox {
+  flex: 1;
+}
+
+div.switch-container {
+  height: 35px;
+  width: 60px;
+
+  border-radius:50px;
+  background: var(--dark-purple);
+
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+}
+
+span.switch {
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 25px;
+  width: 25px;
+  transition: .5s ease;
+  display: grid;
+  place-content: center;
+}
+
+label{
+  display: flex;
+  height:100;
+  align-items: center;
+  padding: 0 5px;
+}
+
+input[type="checkbox"]:checked + span.switch{
+  transform: translateX(95%)
+}
+
 /* Footer ============================== */
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--light-purple);
-  opacity: 0.8;
+  color: #363f5f;
+  opacity: 0.4;
 }
 
 /* Responsive =========================================== */
