@@ -24,10 +24,6 @@ html {
 }
 
 body {
-  --background-color2: #A9A9A9;
-  --background-color: #222;
-  --color-text: #fff;
-
   background: #fff;
   background: #F8F8FF;
   font-family: 'Poppins', sans-serif;
@@ -143,7 +139,6 @@ header {
 
 /* Cards =============================================== */
 .card {
-  background: var(--background-color2);
   background: white;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
@@ -216,7 +211,6 @@ table tbody tr:houer {
 }
 
 table tbody td {
-  background: var(--background-color2);
   background: white;
   padding: 1rem 2rem;
 }
