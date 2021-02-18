@@ -8,8 +8,7 @@
   --dark-purple: #8A00FE;
   --background-color2: #fff;
   --background-color: ##F8F8FF;
-  --color-text: #000;
-  --color-text2: #fff;
+  
   
 }
 
@@ -27,6 +26,12 @@ body {
   background: #fff;
   background: #F8F8FF;
   font-family: 'Poppins', sans-serif;
+  
+}
+
+.dark-mode {
+  background-color: #696969;
+  color: white;
 }
 
 .sr-only {
@@ -86,14 +91,14 @@ a:hover {
 }
 
 .button.cancel {
-color: var(--light-purple);
-border: 2px var(--light-purple) solid;
-border-radius: 0.25rem;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: center;
-opacity: 0.6;
+  color: var(--light-purple);
+  border: 2px var(--light-purple) solid;
+  border-radius: 0.25rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
 
 }
 
@@ -296,7 +301,7 @@ input {
   margin-left: auto;
 }
 
-/** Toggle Switch */
+/** Toggle Switch ================================================*/
 input[type="checkbox"]{
   display:none;
 }

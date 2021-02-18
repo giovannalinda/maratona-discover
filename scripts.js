@@ -10,6 +10,13 @@ const Modal = {
     document.querySelector('.modal-overlay').classList.remove('active');
   },
 };
+/* 
+================ Dark Mode =====================
+/* function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+} 
+*/
 
 const Storage = {
   get() {
