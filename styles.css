@@ -54,24 +54,18 @@ body {
   background:#212121;
 }
 
-.dark-mode .date{
-  background: #494949;
+.dark-mode .button.cancel {
+  color: #fff;
+  border: 2px #fff solid;
 }
 
-.dark-mode .expense {
+.dark-mode table tbody tr td {
+  color: #fff;
   background: #494949;
 }
 
 .dark-mode .description {
-  background: #494949;
-}
-
-.dark-mode .income {
-  background: #494949;
-}
-
-.dark-mode .last-child{
-  background: #494949;
+  color: #fff;
 }
 
 .sr-only {
@@ -131,8 +125,8 @@ a:hover {
 }
 
 .button.cancel {
-  color: white;
-  border: 2px white solid;
+  color: #000;
+  border: 2px #000 solid;
   border-radius: 0.25rem;
   height: 50px;
   display: flex;
@@ -266,12 +260,12 @@ td.description {
 }
 
 td.income {
-  color: #3dd705;
+  color: #000;
   width: min(90vw, 800px);
 }
 
 td.expense {
-  color: #e92929;
+  color: #000;
   width: min(90vw, 800px);
 }
 
