@@ -30,8 +30,48 @@ body {
 }
 
 .dark-mode {
-  background-color: #696969;
-  color: white;
+  background: #212121;
+}
+
+.dark-mode .card {
+  background: #424242;
+  color: #f8f8f8;
+}
+
+.dark-mode footer {
+  color: #fff;
+}
+
+.dark-mode .modal {
+  background: #212121;
+}
+
+.dark-mode .help {
+  color: #f8f8f8;
+}
+
+.dark-mode .switch {
+  background:#212121;
+}
+
+.dark-mode .date{
+  background: #494949;
+}
+
+.dark-mode .expense {
+  background: #494949;
+}
+
+.dark-mode .description {
+  background: #494949;
+}
+
+.dark-mode .income {
+  background: #494949;
+}
+
+.dark-mode .last-child{
+  background: #494949;
 }
 
 .sr-only {
@@ -91,8 +131,8 @@ a:hover {
 }
 
 .button.cancel {
-  color: var(--light-purple);
-  border: 2px var(--light-purple) solid;
+  color: white;
+  border: 2px white solid;
   border-radius: 0.25rem;
   height: 50px;
   display: flex;

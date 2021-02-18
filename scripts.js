@@ -11,11 +11,11 @@ const Modal = {
   },
 };
 
-  function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-} 
-
+const Theme = {
+  toggle() {
+    document.body.classList.toggle('dark-mode');
+  }
+}
 
 const Storage = {
   get() {
