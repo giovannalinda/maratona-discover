@@ -2,5 +2,5 @@
 
 <h4 align = "center">aplicação de controle de finanças desenvolvida durante a Maratona Discover da Rocketseat</h4>
 
-🙃
+<h6 align = "center">🙃</h6>
 
